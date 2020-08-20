@@ -347,9 +347,9 @@ void BusinessLogicTask(void *argument)
   MX_USB_HOST_Init();
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
+  for(;;)  {
+	  HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+	  osDelay(250);
   }
   /* USER CODE END 5 */
 }
