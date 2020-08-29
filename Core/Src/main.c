@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "dqspi.h"
+#include "app_config.h"
 
 /* USER CODE END Includes */
 
@@ -70,6 +71,7 @@ void BusinessLogicTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 void BusinessLogic(void);
+void AppTestFlash(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -352,7 +354,11 @@ void BusinessLogicTask(void *argument)
   /* init code for USB_HOST */
   MX_USB_HOST_Init();
   /* USER CODE BEGIN 5 */
+#if TEST_FLASH_EN
+  AppTestFlash();
+#else
   BusinessLogic();
+#endif
   /* USER CODE END 5 */
 }
 
