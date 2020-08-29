@@ -425,6 +425,9 @@ int8_t DQSpiWrite(uint32_t addr, uint8_t *dat, uint32_t len)
     QSPI_CommandTypeDef s_command = {0};
     uint32_t end_addr, current_size, current_addr;
 
+    if (len == 0)
+    	return 0;
+
     /* Calculation of the size between the write address and the end of the page */
     current_size = W25Q32FV_PAGE_SIZE - (addr % W25Q32FV_PAGE_SIZE);
 
