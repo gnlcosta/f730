@@ -38,6 +38,7 @@ MEMORY
 {
   RAM    (xrw)    : ORIGIN = 0x20000000,   LENGTH = 256K
   FLASH    (rx)    : ORIGIN = 0x8000000,   LENGTH = 64K
+  DSPI   (rx)     : ORIGIN = 0x90000000,   LENGTH = 4M
 }
 
 /* Sections */
@@ -50,6 +51,13 @@ SECTIONS
     KEEP(*(.isr_vector)) /* Startup code */
     . = ALIGN(4);
   } >FLASH
+  
+  /* dual spi */
+  .dspi :
+  {
+   *business_logic.*(.text)
+   *business_logic.*(.text*)
+  } >DSPI
 
   /* The program code and other data into "FLASH" Rom type memory */
   .text :
