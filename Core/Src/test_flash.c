@@ -5,6 +5,7 @@
 
 #include "app_config.h"
 
+#if APP_TEST_FLASH_EN
 
 #define DSPI_MEM_MAP_ADDR           0x90000000
 #define DT_OFFSET                   111
@@ -69,3 +70,6 @@ void AppTestFlash(void)
 	  osDelay(500);
 	}
 }
+
+#endif
+
