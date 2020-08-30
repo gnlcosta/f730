@@ -12,7 +12,8 @@ For STM32CubeProgrammer the external loader can be download [here](https://githu
  * STM32CubeMX 6.0.1
  
 # Board
-Aliexpress: https://a.aliexpress.com/_BOJKBW
+Aliexpress: https://a.aliexpress.com/_BOJKBW  
+![Board](https://github.com/gnlcosta/f730/raw/master/doc/board.jpg)
 
 # License
 MIT License  
