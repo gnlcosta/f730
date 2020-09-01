@@ -309,6 +309,11 @@ int8_t DQSpiEraseChip(void)
         return -1;
     }
 
+    /* QSPI memory reset */
+    if (DQSpiResetMemory() != 0) {
+        return -1;
+    }
+
     return 0;
 }
 
