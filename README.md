@@ -12,24 +12,25 @@ There are two examples that you can select in compilation time:
  
 Both run in the external flash.
 
-Steps:  
+## Steps:  
   * open the file [app_config.h](https://github.com/gnlcosta/f730/blob/master/Core/Inc/app_config.h) and select which application to compile
   * if you enable *APP_LED_TOGGLE_EN* then you can stop here, otherwise
   * connect the dispaly to the board LCD ILI9341 240x320. The map is:
-  
-|     uC   |   Display   |
-|:-------- | -----------:|
-|    PA4   |      CS     |
-|    PA5   |      SCK    |
-|    PA6   |     MISO    |
-|    PA7   |     MOSI    |
-|    PC4   |     DC      |
-|    PB0   |     RESET   |
-|    PB1   |     LED/BL  |
-                      
+
+  |     uC   |   Display   |
+  |:-------- | -----------:|
+  |    PA4   |      CS     |
+  |    PA5   |      SCK    |
+  |    PA6   |     MISO    |
+  |    PA7   |     MOSI    |
+  |    PC4   |     DC      |
+  |    PB0   |     RESET   |
+  |    PB1   |     LED/BL  |
+
  * compile and download the firmware
 
-![Board](https://github.com/gnlcosta/f730/raw/master/doc/lcd_screen.jpg)
+## Result
+<img src="https://github.com/gnlcosta/f730/raw/master/doc/lcd_screen.jpg" alt="Board" width="200">
 
 # External Loader
 For STM32CubeProgrammer the external loader can be download [here](https://github.com/gnlcosta/f730_w25q32fv/blob/master/F730_W25Q32FV.stldr)
