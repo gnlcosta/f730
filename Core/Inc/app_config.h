@@ -14,8 +14,8 @@
 
 
 void BusinessLogic(void);
-void AppTestFlash(void);
 void HmiLvglExample(void);
+void AppTestFlash(void);
 
 #endif
 
