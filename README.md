@@ -8,7 +8,7 @@
 # App/Firmware examples
 There are two examples that you can select in compilation time:
  * simple led blinking
- * simple LCD exmaple using (the wonderful) [LVGL library](https://lvgl.io/)
+ * simple LCD example using (the wonderful) [LVGL library](https://lvgl.io/)
  
 Both run in the external flash.
 
