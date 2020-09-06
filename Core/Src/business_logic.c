@@ -11,7 +11,7 @@
 
 void BusinessLogic(void)
 {
-	volatile double a = 1;
+	volatile uint32_t a = 1;
 	volatile uint32_t i = 0;
 
 	/* Infinite loop */
